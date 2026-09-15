@@ -23,11 +23,28 @@
   <p class="profile-info">These are some of my educational goals:</p>
 
   <ol start="1">
-        <li>Finish Senior High School successfully.</li>
-‎        <li>Improve my coding skills every day.</li>
-‎        <li>Learn HTML, CSS, JavaScript, and Python.</li>
-‎        <li>Continue studying Information Technology.</li>
-‎        <li>Become a successful software developer.</li>
+<td>Finish Senior High School successfully.</td>
+        <td>Build a strong educational foundation for my future.</td>
+    </tr>
+
+    <tr>
+        <td>Improve my coding skills every day.</td>
+        <td>Become more confident in programming.</td>
+    </tr>
+
+    <tr>
+        <td>Learn HTML, CSS, JavaScript, and Python.</td>
+        <td>Develop useful skills for web and software development.</td>
+    </tr>
+
+    <tr>
+        <td>Continue studying Information Technology.</td>
+        <td>Gain more knowledge and experience in the IT field.</td>
+    </tr>
+
+    <tr>
+        <td>Become a successful software developer.</td>
+        <td>Achieve my dream career and create helpful applications.</td>
   </ol>
 
   <!-- Educational Goals Table (Bold Items) -->
