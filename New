@@ -25,12 +25,11 @@
 
   <ol start="1">
     <li>Finish Senior High School successfully.</li>
-    <li>Improve my coding skills every day.</li>
-    <li>Learn HTML, CSS, JavaScript, and Python.</li>
-    <li>Continue studying Information Technology.</li>
-    <li>Become a successful software developer.</li>
-  </ol>
-
+‎        <li>Improve my coding skills every day.</li>
+‎        <li>Learn HTML, CSS, JavaScript, and Python.</li>
+‎        <li>Continue studying Information Technology.</li>
+‎        <li>Become a successful software developer.</li>
+‎   </ol>
   <!-- Educational Goals Table (Bold Items) -->
   <table class="table-style" border="2">
     <tr>
