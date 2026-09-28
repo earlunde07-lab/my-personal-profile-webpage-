@@ -1,6 +1,8 @@
+
 /* =================================
    PERSONAL PROFILE WEBSITE
    VIOLET AESTHETIC DESIGN
+   FORMAL FONT STYLE
    ================================= */
 
 * {
@@ -12,7 +14,7 @@
 body {
     background: #8e6bbf;
     color: #ffffff;
-    font-family: "Comic Sans MS", "Segoe Print", cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ================================
@@ -23,7 +25,6 @@ nav {
     width: 95%;
     margin: 20px auto 0;
     padding: 22px 15px;
-
     text-align: center;
 
     background: linear-gradient(
@@ -39,10 +40,10 @@ nav {
 nav a {
     color: #ffffff;
     text-decoration: none;
-
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
     margin: 0 8px;
-
     transition: 0.3s;
 }
 
@@ -57,7 +58,6 @@ nav a:hover {
 .profile {
     width: 95%;
     max-width: 1000px;
-
     min-height: 750px;
 
     margin: 0 auto;
@@ -81,14 +81,12 @@ nav a:hover {
 
 h1 {
     margin: 20px 0 40px;
-
     color: #ffffff;
 
-    font-family: Georgia, serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 60px;
-
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 
     text-shadow:
         3px 3px 0 #5b3a7d,
@@ -101,11 +99,12 @@ h1 {
 
 h2 {
     margin: 25px 0 15px;
-
     color: #ffffff;
 
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 28px;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /* ================================
@@ -114,12 +113,12 @@ h2 {
 
 p {
     margin: 15px auto;
-
     max-width: 850px;
 
     color: #ffffff;
 
-    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     line-height: 1.8;
 }
 
@@ -133,8 +132,10 @@ p {
 
     color: #ffffff;
 
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 34px;
-    letter-spacing: 3px;
+    font-weight: bold;
+    letter-spacing: 2px;
 
     text-shadow: 2px 2px 5px rgba(30, 10, 50, 0.35);
 }
@@ -152,18 +153,15 @@ p {
     background: rgba(255, 255, 255, 0.15);
 
     border: 2px solid rgba(255, 255, 255, 0.35);
-
     border-radius: 15px;
 
-    box-shadow:
-        0 6px 18px rgba(30, 10, 50, 0.25);
+    box-shadow: 0 6px 18px rgba(30, 10, 50, 0.25);
 
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-
     background: rgba(255, 255, 255, 0.25);
 }
 
@@ -180,8 +178,7 @@ p {
     border: 5px solid #ffffff;
     border-radius: 10px;
 
-    box-shadow:
-        0 8px 20px rgba(30, 10, 50, 0.35);
+    box-shadow: 0 8px 20px rgba(30, 10, 50, 0.35);
 }
 
 /* ================================
@@ -190,7 +187,6 @@ p {
 
 button {
     margin-top: 25px;
-
     padding: 13px 30px;
 
     background: #ffffff;
@@ -199,11 +195,11 @@ button {
     border: none;
     border-radius: 25px;
 
-    font-family: "Comic Sans MS", cursive;
-    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -220,7 +216,7 @@ button:hover {
 
 .profile a {
     color: #ffffff;
-
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
@@ -240,7 +236,7 @@ button:hover {
     }
 
     nav a {
-        font-size: 17px;
+        font-size: 16px;
         margin: 4px;
     }
 
@@ -251,7 +247,7 @@ button:hover {
 
     h1 {
         font-size: 42px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
     h2 {
@@ -259,10 +255,10 @@ button:hover {
     }
 
     p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .section-title {
         font-size: 27px;
     }
-       }
+}
