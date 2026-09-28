@@ -1,6 +1,5 @@
 /* =================================
-   PERSONAL PROFILE WEBSITE
-   VIOLET AESTHETIC DESIGN
+   MY PROFILE • PURPLE AESTHETIC
    ================================= */
 
 * {
@@ -10,8 +9,8 @@
 }
 
 body {
-    background: #8e6bbf;
-    color: #ffffff;
+    background: linear-gradient(135deg, #6b449e, #8e6bbf);
+    color: #f8f5fc;
     font-family: "Comic Sans MS", "Segoe Print", cursive;
 }
 
@@ -23,165 +22,122 @@ nav {
     width: 95%;
     margin: 20px auto 0;
     padding: 22px 15px;
-
     text-align: center;
-
-    background: linear-gradient(
-        90deg,
-        #3b1f5c,
-        #65408f,
-        #8a62b8
-    );
-
+    background: linear-gradient(90deg, #3b1f5c, #65408f, #8a62b8);
     box-shadow: 0 4px 12px rgba(40, 15, 70, 0.35);
 }
 
 nav a {
-    color: #ffffff;
+    color: #f8f5fc;
     text-decoration: none;
-
     font-size: 20px;
-    margin: 0 8px;
-
-    transition: 0.3s;
+    margin: 0 10px;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: #e4c7ff;
+    color: #d8b8ff;
 }
 
 /* ================================
-   MAIN CONTENT
+   MAIN PROFILE AREA
 ================================ */
 
 .profile {
     width: 95%;
     max-width: 1000px;
-
     min-height: 750px;
-
     margin: 0 auto;
     padding: 80px 45px;
-
     text-align: center;
-
-    background: linear-gradient(
-        180deg,
-        #7b55a8,
-        #68458f,
-        #51356f
-    );
-
+    background: linear-gradient(180deg, #7b55a8, #68458f, #51356f);
     box-shadow: 0 8px 25px rgba(35, 15, 60, 0.35);
+    border-radius: 20px;
 }
 
 /* ================================
-   NAME / MAIN TITLE
+   MAIN HEADING
 ================================ */
 
 h1 {
     margin: 20px 0 40px;
-
     color: #ffffff;
-
     font-family: Georgia, serif;
     font-size: 60px;
-
     font-weight: bold;
-    letter-spacing: 5px;
-
+    letter-spacing: 4px;
     text-shadow:
         3px 3px 0 #5b3a7d,
         5px 5px 8px rgba(30, 10, 50, 0.4);
 }
 
 /* ================================
-   SUBTITLE
+   SUBHEADING
 ================================ */
 
 h2 {
     margin: 25px 0 15px;
-
-    color: #ffffff;
-
+    color: #e9dfff;
     font-size: 28px;
     letter-spacing: 2px;
 }
 
 /* ================================
-   PARAGRAPH
+   PARAGRAPH TEXT
 ================================ */
 
 p {
     margin: 15px auto;
-
     max-width: 850px;
-
-    color: #ffffff;
-
+    color: #f3edfc;
     font-size: 19px;
     line-height: 1.8;
 }
 
 /* ================================
-   SECTION TITLE
+   SECTION HEADINGS
 ================================ */
 
 .section-title {
     margin-top: 70px;
     margin-bottom: 40px;
-
     color: #ffffff;
-
-    font-size: 34px;
+    font-size: 32px;
     letter-spacing: 3px;
-
     text-shadow: 2px 2px 5px rgba(30, 10, 50, 0.35);
 }
 
 /* ================================
-   CARDS
+   INFO CARDS
 ================================ */
 
 .card {
     max-width: 750px;
-
     margin: 25px auto;
     padding: 25px;
-
     background: rgba(255, 255, 255, 0.15);
-
     border: 2px solid rgba(255, 255, 255, 0.35);
-
     border-radius: 15px;
-
-    box-shadow:
-        0 6px 18px rgba(30, 10, 50, 0.25);
-
-    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(30, 10, 50, 0.25);
+    transition: 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.28);
 }
 
 /* ================================
-   IMAGES
+   PROFILE IMAGE
 ================================ */
 
 .profile img {
     max-width: 90%;
     height: auto;
-
     margin-top: 25px;
-
     border: 5px solid #ffffff;
-    border-radius: 10px;
-
-    box-shadow:
-        0 8px 20px rgba(30, 10, 50, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(30, 10, 50, 0.35);
 }
 
 /* ================================
@@ -190,27 +146,20 @@ p {
 
 button {
     margin-top: 25px;
-
     padding: 13px 30px;
-
     background: #ffffff;
-    color: #5a3b7d;
-
+    color: #6b449e;
     border: none;
     border-radius: 25px;
-
     font-family: "Comic Sans MS", cursive;
     font-size: 18px;
-
     cursor: pointer;
-
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 button:hover {
-    background: #e4c7ff;
-    color: #3b1f5c;
-
+    background: #e4d4ff;
+    color: #4a2a75;
     transform: translateY(-3px);
 }
 
@@ -219,50 +168,45 @@ button:hover {
 ================================ */
 
 .profile a {
-    color: #ffffff;
-
+    color: #f8f5fc;
     font-weight: bold;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
 }
 
 .profile a:hover {
-    color: #e4c7ff;
+    color: #d8b8ff;
+    border-bottom: 2px solid #d8b8ff;
 }
 
 /* ================================
-   MOBILE PHONE
+   MOBILE / PHONE VIEW
 ================================ */
 
 @media (max-width: 600px) {
-
     nav {
         padding: 18px 8px;
     }
-
     nav a {
         font-size: 17px;
         margin: 4px;
     }
-
     .profile {
         width: 95%;
         padding: 55px 18px;
     }
-
     h1 {
-        font-size: 42px;
-        letter-spacing: 3px;
+        font-size: 40px;
+        letter-spacing: 2px;
     }
-
     h2 {
-        font-size: 23px;
+        font-size: 22px;
     }
-
     p {
         font-size: 17px;
     }
-
     .section-title {
-        font-size: 27px;
+        font-size: 25px;
     }
 }
