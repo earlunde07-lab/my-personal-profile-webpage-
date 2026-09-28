@@ -1,32 +1,46 @@
+/* Font Properties */
 body {
-    color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  color: #333333;
+  background-color: #f8f9fa;
+  
+  /* Text Property: Line Height */
+  line-height: 1.6;
 }
 
-h1 {
-    text-align: center;
+/* Headings: Text Properties & Font Weight */
+h1, h2 {
+  font-weight: 700;
+  text-transform: uppercase;   /* Text Transformation */
+  letter-spacing: 1.5px;       /* Text Spacing */
+  text-align: center;          /* Text Alignment */
 }
 
-.profile-info {
-    color: blue;
+/* Gradient Background */
+header {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  color: #ffffff;
+  padding: 2rem;
 }
 
-.section-title {
-    font-weight: bold;
+/* Navigation: Text Decoration */
+nav a {
+  color: #ffffff;
+  text-decoration: none;      /* Text Decoration */
 }
 
-.nav-link{
-    text-align: center;
+nav a:hover {
+  text-decoration: underline; /* Text Decoration */
 }
 
-.highlight {
-    background-color:blue;
-    font-weight: bold;
+/* Form / Profile Paragraphs */
+p {
+  word-spacing: 2px;          /* Text Spacing */
 }
 
-#main-header {
-    text-align; center;
-}
-
-#about-section{
-    background-color: lightgray;
+/* Opacity Property */
+button:hover, .profile-card:hover {
+  opacity: 0.85;              /* Opacity */
 }
