@@ -1,5 +1,6 @@
 /* =================================
-   MY DIGITAL CORNER • AMETHYST GLOW
+   PERSONAL PROFILE WEBSITE
+   VIOLET AESTHETIC DESIGN
    ================================= */
 
 * {
@@ -9,190 +10,259 @@
 }
 
 body {
-    background: linear-gradient(135deg, #634294, #9474c4);
-    color: #fbf7ff;
+    background: #8e6bbf;
+    color: #ffffff;
     font-family: "Comic Sans MS", "Segoe Print", cursive;
 }
 
 /* ================================
-   TOP MENU
+   NAVIGATION
 ================================ */
 
-.menu-bar {
+nav {
     width: 95%;
     margin: 20px auto 0;
-    padding: 21px 14px;
+    padding: 22px 15px;
+
     text-align: center;
-    background: linear-gradient(90deg, #341c5c, #5e3da0, #8060c0);
-    box-shadow: 0 4px 13px rgba(38, 14, 72, 0.36);
-    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #3b1f5c,
+        #65408f,
+        #8a62b8
+    );
+
+    box-shadow: 0 4px 12px rgba(40, 15, 70, 0.35);
 }
 
-.menu-bar a {
-    color: #fbf7ff;
+nav a {
+    color: #ffffff;
     text-decoration: none;
+
     font-size: 20px;
-    margin: 0 9px;
-    transition: 0.3s ease;
+    margin: 0 8px;
+
+    transition: 0.3s;
 }
 
-.menu-bar a:hover {
-    color: #dac4ff;
+nav a:hover {
+    color: #e4c7ff;
 }
 
 /* ================================
-   MAIN DISPLAY AREA
+   MAIN CONTENT
 ================================ */
 
-.my-space {
+.profile {
     width: 95%;
     max-width: 1000px;
+
     min-height: 750px;
+
     margin: 0 auto;
-    padding: 75px 42px;
+    padding: 80px 45px;
+
     text-align: center;
-    background: linear-gradient(180deg, #7250ad, #604096, #4c327a);
-    box-shadow: 0 8px 26px rgba(32, 12, 62, 0.36);
-    border-radius: 20px;
+
+    background: linear-gradient(
+        180deg,
+        #7b55a8,
+        #68458f,
+        #51356f
+    );
+
+    box-shadow: 0 8px 25px rgba(35, 15, 60, 0.35);
 }
 
 /* ================================
-   BIG TITLE
+   NAME / MAIN TITLE
 ================================ */
 
-.main-head {
-    margin: 18px 0 38px;
+h1 {
+    margin: 20px 0 40px;
+
     color: #ffffff;
+
     font-family: Georgia, serif;
-    font-size: 59px;
+    font-size: 60px;
+
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
+
     text-shadow:
-        3px 3px 0 #523682,
-        5px 5px 9px rgba(28, 8, 52, 0.4);
+        3px 3px 0 #5b3a7d,
+        5px 5px 8px rgba(30, 10, 50, 0.4);
 }
 
 /* ================================
-   SUB HEADING
+   SUBTITLE
 ================================ */
 
-.sub-head {
-    margin: 22px 0 14px;
-    color: #f0e8ff;
-    font-size: 27px;
+h2 {
+    margin: 25px 0 15px;
+
+    color: #ffffff;
+
+    font-size: 28px;
     letter-spacing: 2px;
 }
 
 /* ================================
-   BODY TEXT
+   PARAGRAPH
 ================================ */
 
-.desc-text {
-    margin: 16px auto;
-    max-width: 830px;
-    color: #f6f1ff;
-    font-size: 18px;
-    line-height: 1.78;
-}
+p {
+    margin: 15px auto;
 
-/* ================================
-   SECTION HEADER
-================================ */
+    max-width: 850px;
 
-.zone-label {
-    margin-top: 65px;
-    margin-bottom: 35px;
     color: #ffffff;
-    font-size: 33px;
+
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.section-title {
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+    color: #ffffff;
+
+    font-size: 34px;
     letter-spacing: 3px;
-    text-shadow: 2px 2px 6px rgba(28, 8, 52, 0.36);
+
+    text-shadow: 2px 2px 5px rgba(30, 10, 50, 0.35);
 }
 
 /* ================================
-   CONTENT BOXES
+   CARDS
 ================================ */
 
-.info-block {
-    max-width: 730px;
-    margin: 23px auto;
-    padding: 24px;
-    background: rgba(255, 255, 255, 0.14);
-    border: 2px solid rgba(255, 255, 255, 0.33);
-    border-radius: 17px;
-    box-shadow: 0 6px 17px rgba(28, 8, 52, 0.23);
-    transition: 0.3s ease;
+.card {
+    max-width: 750px;
+
+    margin: 25px auto;
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border: 2px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 6px 18px rgba(30, 10, 50, 0.25);
+
+    transition: 0.3s;
 }
 
-.info-block:hover {
+.card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.24);
+
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /* ================================
-   IMAGE HOLDER
+   IMAGES
 ================================ */
 
-.photo-frame {
-    max-width: 89%;
+.profile img {
+    max-width: 90%;
     height: auto;
-    margin-top: 24px;
+
+    margin-top: 25px;
+
     border: 5px solid #ffffff;
-    border-radius: 13px;
-    box-shadow: 0 8px 21px rgba(28, 8, 52, 0.36);
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 20px rgba(30, 10, 50, 0.35);
 }
 
 /* ================================
-   CLICK BUTTON
+   BUTTON
 ================================ */
 
-.click-btn {
-    margin-top: 24px;
-    padding: 12px 29px;
+button {
+    margin-top: 25px;
+
+    padding: 13px 30px;
+
     background: #ffffff;
-    color: #6640a2;
+    color: #5a3b7d;
+
     border: none;
-    border-radius: 26px;
+    border-radius: 25px;
+
     font-family: "Comic Sans MS", cursive;
     font-size: 18px;
+
     cursor: pointer;
-    transition: 0.3s ease;
+
+    transition: 0.3s;
 }
 
-.click-btn:hover {
-    background: #d9ccff;
-    color: #442a78;
+button:hover {
+    background: #e4c7ff;
+    color: #3b1f5c;
+
     transform: translateY(-3px);
 }
 
 /* ================================
-   HYPERLINKS
+   LINKS
 ================================ */
 
-.link-text {
-    color: #fbf7ff;
+.profile a {
+    color: #ffffff;
+
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: 0.3s;
 }
 
-.link-text:hover {
-    color: #dac4ff;
-    border-bottom-color: #dac4ff;
+.profile a:hover {
+    color: #e4c7ff;
 }
 
 /* ================================
-   MOBILE LAYOUT
+   MOBILE PHONE
 ================================ */
 
 @media (max-width: 600px) {
-    .menu-bar { padding: 17px 8px; }
-    .menu-bar a { font-size: 17px; margin: 4px 5px; }
-    .my-space { width: 95%; padding: 48px 16px; }
-    .main-head { font-size: 40px; letter-spacing: 2px; }
-    .sub-head { font-size: 22px; }
-    .desc-text { font-size: 17px; }
-    .zone-label { font-size: 26px; }
-    .info-block { padding: 20px; }
-    .click-btn { padding: 11px 26px; font-size: 17px; }
-}
+
+    nav {
+        padding: 18px 8px;
+    }
+
+    nav a {
+        font-size: 17px;
+        margin: 4px;
+    }
+
+    .profile {
+        width: 95%;
+        padding: 55px 18px;
+    }
+
+    h1 {
+        font-size: 42px;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+       }
