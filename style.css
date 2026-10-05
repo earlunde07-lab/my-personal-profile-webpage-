@@ -1,3 +1,14 @@
+/* =========================================
+   PERSONAL PROFILE WEBSITE
+   CSS BOX MODEL, LISTS, LINKS,
+   POSITION, FLOAT AND Z-INDEX
+   ========================================= */
+
+
+/* =========================================
+   STEP 1: BASIC CSS
+   ========================================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,61 +16,277 @@
 }
 
 body {
+    background: #8e6bbf;
+    color: white;
     font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    color: #333;
+    line-height: 1.6;
 }
 
-/* Navigation */
-nav {
-    background: #333;
+
+/* =========================================
+   STEP 2: CSS LISTS
+   ========================================= */
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     padding: 15px;
-    text-align: center;
+    background: #4b2c69;
 }
 
-nav a {
+.navigation li {
+    display: inline-block;
+}
+
+
+/* =========================================
+   STEP 3: CSS LINKS
+   ========================================= */
+
+.navigation a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
 }
 
-nav a:hover {
-    color: #00bfff;
+
+/* Unvisited link */
+.navigation a:link {
+    color: white;
 }
 
-/* Container */
-.container {
-    width: 80%;
+
+/* Visited link */
+.navigation a:visited {
+    color: #e8d8ff;
+}
+
+
+/* Mouse over link */
+.navigation a:hover {
+    background: #b993d6;
+    color: white;
+}
+
+
+/* Active link */
+.navigation a:active {
+    background: #6a3d8f;
+}
+
+
+/* =========================================
+   STEP 4: CSS BOX MODEL
+   Content
+   Padding
+   Border
+   Margin
+   ========================================= */
+
+main {
+    width: 90%;
+    max-width: 900px;
     margin: 30px auto;
-    padding: 20px;
-    background: white;
-    border: 2px solid #333;
 }
 
-/* Box Model */
-.box {
-    background: #ddd;
-    padding: 20px;
-    border: 5px solid #555;
-    margin: 20px 0;
+.profile-card,
+.info-box {
+    width: 100%;
+    padding: 25px;
+    border: 3px solid #d8b4fe;
+    margin-bottom: 25px;
+    background: #6f4b8b;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 }
 
-/* List */
-ul {
-    margin: 15px 30px;
-    padding: 10px;
+
+/* Headings */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 3px solid #d8b4fe;
 }
 
-li {
-    margin: 8px;
-}
-
-/* Position example */
-.box {
-    position: relative;
-}
-
-/* Float example */
 h2 {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   STEP 5: FLOAT
+   ========================================= */
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+
+    float: left;
+
+    margin-right: 20px;
     margin-bottom: 10px;
+
+    padding: 8px;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+
+/* Clear the float */
+
+.clear {
+    clear: both;
+}
+
+
+/* =========================================
+   STEP 6: LIST PROPERTIES
+   ========================================= */
+
+.interest-list {
+    list-style-type: circle;
+    padding-left: 30px;
+}
+
+.goal-list {
+    list-style-type: decimal;
+    padding-left: 30px;
+}
+
+.interest-list li,
+.goal-list li {
+    margin: 8px 0;
+}
+
+
+/* =========================================
+   STEP 7: POSITION
+   ========================================= */
+
+.z-container {
+    position: relative;
+
+    width: 100%;
+    height: 250px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border: 3px solid white;
+    background: #54366d;
+    border-radius: 15px;
+}
+
+
+/* =========================================
+   STEP 8: Z-INDEX
+   ========================================= */
+
+.card {
+    position: absolute;
+
+    width: 180px;
+    height: 100px;
+
+    padding: 30px 10px;
+
+    text-align: center;
+
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+
+/* First card */
+
+.card-one {
+    background: #7c4dff;
+
+    top: 30px;
+    left: 80px;
+
+    z-index: 1;
+}
+
+
+/* Second card */
+
+.card-two {
+    background: #9c27b0;
+
+    top: 70px;
+    left: 180px;
+
+    z-index: 2;
+}
+
+
+/* Third card */
+
+.card-three {
+    background: #673ab7;
+
+    top: 110px;
+    left: 280px;
+
+    z-index: 3;
+}
+
+
+/* =========================================
+   STEP 9: FOOTER
+   ========================================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+    background: #4b2c69;
+
+    border-top: 3px solid #d8b4fe;
+}
+
+
+/* =========================================
+   STEP 10: MOBILE SCREEN
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .z-container {
+        height: 300px;
+    }
+
+    .card-one {
+        left: 20px;
+    }
+
+    .card-two {
+        left: 100px;
+    }
+
+    .card-three {
+        left: 180px;
+    }
 }
