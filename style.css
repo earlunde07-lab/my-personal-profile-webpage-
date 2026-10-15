@@ -1,223 +1,212 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background: #8e6bbf;
-    color: white;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-
-.navigation {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px;
-    background: #4b2c69;
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.navigation li {
-    display: inline-block;
+nav ul {
+  list-style-type: none;
+  text-align: center;
 }
 
-
-.navigation a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    display: block;
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
-
-.navigation a:visited {
-    color: #e8d8ff;
+nav a:link {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
-
-.navigation a:hover {
-    background: #b993d6;
-    color: white;
+nav a:visited {
+  color: #bdc3c7;
 }
 
-
-.navigation a:active {
-    background: #6a3d8f;
+nav a:hover {
+  background-color: #3498db;
+  color: white;
 }
 
-
-main {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
+nav a:active {
+  background-color: #e74c3c;
 }
 
-.profile-card,
-.info-box {
-    width: 100%;
-    padding: 25px;
-    border: 3px solid #d8b4fe;
-    margin-bottom: 25px;
-    background: #6f4b8b;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  position: relative;
 }
 
-
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-bottom: 3px solid #d8b4fe;
+.profile-card {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  padding: 25px;
+  border: 2px solid #3498db;
+  margin: 20px auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
 }
 
-h2 {
-    margin-bottom: 15px;
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border: 3px solid #2c3e50;
+  padding: 5px;
+  margin: 0 20px 15px 0;
+  float: left;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-
-.profile-image {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-
-    float: left;
-
-    margin-right: 20px;
-    margin-bottom: 10px;
-
-    padding: 8px;
-    border: 3px solid white;
-    border-radius: 15px;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
-.clear {
-    clear: both;
+.about-section {
+  background: white;
+  padding: 25px;
+  border: 1px solid #ddd;
+  margin: 25px 0;
+  border-radius: 8px;
 }
 
-
-.interest-list {
-    list-style-type: circle;
-    padding-left: 30px;
+.skills-section {
+  background: white;
+  padding: 25px;
+  border: 1px solid #ddd;
+  margin: 25px 0;
+  border-radius: 8px;
 }
 
-.goal-list {
-    list-style-type: decimal;
-    padding-left: 30px;
+.skills-section h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
 }
 
-.interest-list li,
-.goal-list li {
-    margin: 8px 0;
+.skills-list {
+  list-style-type: circle;
+  padding-left: 30px;
 }
 
-
-.z-container {
-    position: relative;
-
-    width: 100%;
-    height: 250px;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    border: 3px solid white;
-    background: #54366d;
-    border-radius: 15px;
+.skills-list li {
+  margin: 8px 0;
 }
 
-
-.card {
-    position: absolute;
-
-    width: 180px;
-    height: 100px;
-
-    padding: 30px 10px;
-
-    text-align: center;
-
-    border: 3px solid white;
-    border-radius: 10px;
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #e74c3c;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  z-index: 10;
 }
 
-
-.card-one {
-    background: #7c4dff;
-
-    top: 30px;
-    left: 80px;
-
-    z-index: 1;
+.layer-box {
+  position: relative;
+  height: 150px;
+  margin: 30px 0;
 }
 
-
-.card-two {
-    background: #9c27b0;
-
-    top: 70px;
-    left: 180px;
-
-    z-index: 2;
+.box-one {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  height: 80px;
+  background: #3498db;
+  z-index: 1;
+  padding: 10px;
+  border: 2px solid #2980b9;
 }
 
-
-.card-three {
-    background: #673ab7;
-
-    top: 110px;
-    left: 280px;
-
-    z-index: 3;
+.box-two {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 120px;
+  height: 80px;
+  background: #2ecc71;
+  z-index: 2;
+  padding: 10px;
+  border: 2px solid #27ae60;
 }
 
+.contact-section {
+  background: white;
+  padding: 25px;
+  border: 1px solid #ddd;
+  margin: 25px 0;
+  border-radius: 8px;
+}
+
+.contact-section h3 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
 
 footer {
-    text-align: center;
-
-    padding: 20px;
-
-    margin-top: 30px;
-
-    background: #4b2c69;
-
-    border-top: 3px solid #d8b4fe;
-}
-
-
-@media (max-width: 600px) {
-
-    .navigation {
-        flex-direction: column;
-        text-align: center;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  clear: both;
     }
-
-    .profile-image {
-        float: none;
-        display: block;
-        margin: 0 auto 20px;
-    }
-
-    .z-container {
-        height: 300px;
-    }
-
-    .card-one {
-        left: 20px;
-    }
-
-    .card-two {
-        left: 100px;
-    }
-
-    .card-three {
-        left: 180px;
-    }
-}
