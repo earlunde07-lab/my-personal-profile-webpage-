@@ -2,74 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Hobbies - Earl Keith C. Unde</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav>
-    <a class="nav-link highlight"  href="index.html">Introductions</a> |
-    <a class="nav-link highlight" href="about.html">About Me</a> |
-    <a class="nav-link highlight" href="hobbies.html">My Hobbies</a> |
-    <a class="nav-link highlight" href="favorites.html">My Favorites</a> |
-    <a class="nav-link highlight" href="goals.html">My Goals</a> |
-    <a class="nav-link highlight" href="contact.html">Contact Me</a> |
+    <ul>
+      <li><a href="index.html">Introductions</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="hobbies.html">My Hobbies</a></li>
+      <li><a href="favorites.html">My Favorites</a></li>
+      <li><a href="goals.html">My Goals</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
   </nav>
-  
-  <h1 id="main-header">My Hobbies and Interests</h1>
-  <hr>
 
-  <p class="profile-info">These are some of the hobbies and interests that describe me:</p>
+  <header class="page-header">
+    <h1 id="main-header">My Hobbies and Interests</h1>
+  </header>
 
-  <ul>
-    <li class="profile-info">Learning HTML, CSS, and JavaScript</li>
-    <li class="profile-info">Playing online games</li>
-    <li class="profile-info">Listening to music</li>
-    <li class="profile-info">Watching programming tutorials</li>
-    <li class="profile-info">Exploring new technology</li>
-  </ul>
+  <main>
+    
+    <section class="content-card">
+      <h2 class="section-title">Things I Love Doing</h2>
+      <p class="profile-info">These are some of the hobbies and interests that describe me:</p>
 
-  <video controls width="400">
-    <source src="July 20, 2026.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+      <ul class="hobby-list">
+        <li>Learning HTML, CSS, and JavaScript</li>
+        <li>Playing online games</li>
+        <li>Listening to music</li>
+        <li>Watching programming tutorials</li>
+        <li>Exploring new technology</li>
+      </ul>
+    </section>
 
-  <p class="profile-info">
-    This video is related to my hobbies and interests because it shows one of the
-    activities that I enjoy during my free time.
-  </p>
+    <section class="content-card">
+      <h2 class="section-title">My Hobby Video</h2>
+      <div class="video-container">
+        <video controls width="100%">
+          <source src="July 20, 2026.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="profile-info">
+        This video is related to my hobbies and interests because it shows one of the
+        activities that I enjoy during my free time.
+      </p>
+    </section>
+    
+    <section class="content-card">
+      <h2 class="section-title">Hobby Summary Table</h2>
+      <table class="table-style">
+        <tr>
+          <th class="table-header">Hobby / Interest</th>
+          <th class="table-header">Description</th>
+        </tr>
+        <tr>
+          <td>Playing Basketball</td>
+          <td>I enjoy playing basketball with my friends.</td>
+        </tr>
+        <tr>
+          <td>Playing Online Games</td>
+          <td>I play online games for fun.</td>
+        </tr>
+        <tr>
+          <td>Listening to Music</td>
+          <td>I listen to music during my free time.</td>
+        </tr>
+        <tr>
+          <td>Watching Movies</td>
+          <td>I enjoy watching movies for entertainment.</td>
+        </tr>
+      </table>
+    </section>
+  </main>
 
-  <br>
-
-  <h2 class="section-profile">Hobby Summary Table</h2>
-  <table class="table-style" border="1" cellpadding="8">
-    <tr>
-      <th class="table-header">Hobby / Interest</th>
-      <th class="table-header">Description</th>
-    </tr>
-
-  <td>Playing Basketball</td>
-    <td>I enjoy playing basketball with my friends.</td>
-  </tr>
-
-  <tr>
-    <td>Playing Online Games</td>
-    <td>I play online games for fun.</td>
-  </tr>
-
-  <tr>
-    <td>Listening to Music</td>
-    <td>I listen to music during my free time.</td>
-  </tr>
-
-  <tr>
-    <td>Watching Movies</td>
-    <td>I enjoy watching movies for entertainment.</td>
-      
-    </tr>
-</table>
-
-<br>
+  <footer>
+    <p>&copy; 2026 Earl Keith C. Unde. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
