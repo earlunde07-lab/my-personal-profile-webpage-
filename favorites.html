@@ -1,94 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>My Favorite - Earl Keith  C. Unde</title>
- <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorites - Earl Keith C. Unde</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
- <nav>
-    <a class="nav-link highlight"  href="index.html">Introductions</a> |
-    <a class="nav-link highlight" href="about.html">About Me</a> |
-    <a class="nav-link highlight" href="hobbies.html">My Hobbies</a> |
-    <a class="nav-link highlight" href="favorites.html">My Favorites</a> |
-    <a class="nav-link highlight" href="goals.html">My Goals</a> |
-    <a class="nav-link highlight" href="contact.html">Contact Me</a> |
+ 
+  <nav>
+    <ul>
+      <li><a href="index.html">Introductions</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="hobbies.html">My Hobbies</a></li>
+      <li><a href="favorites.html">My Favorites</a></li>
+      <li><a href="goals.html">My Goals</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
   </nav>
 
- <h1 id="main-header">My Top 5 Favorite Foods</h1>
-<hr>
- 
- <p class="profile-info">Below are my top five favorite foods:</p>
-‎
-‎    <ol type="A">
-‎        <li class="profile-info">lechon</li>
-‎        <li class="profile-info">tinola</li>
-‎        <li class="profile-info">ice cream</li>
-‎        <li class="profile-info">fish</li>
-‎        <li class="profile-info">french fries</li>
-‎    </ol>
-‎
-‎    <h2 class="section-title">My Favorite Things</h2>
-‎    <p class="profile-info">
-‎        My favorite subject is <b>Computer Programming</b>.
-    My favorite programming language to learn is HTML.
-    I also enjoy discovering new coding techniques
-    and building simple websites.
-‎    </p>
-‎
- <br> 
- 
-‎        <audio controls>
-‎        
-‎     <source src="fitterkarma - Kalapastangan (Lyrics).mp3" type="audio/mpeg">
-‎          
-‎      type="audio/mp3">   
-‎        
-‎      </audio>
-‎      
-‎        <p class="profile-info">     
-‎  This audio represents one of my favorite songs that helps me relax  and stay motivated.
-</p>
+  <header class="page-header">
+    <h1 id="main-header">My Favorites</h1>
+  </header>
 
- <h2 class="section-title>">
-<table class="table-style" border="2">
- 
-    <tr>
-        <th class="table-header">Favorite Food</th>
-        <th class="table-header">Why I Like It</th>
-    </tr>
+  <main>
+   
+    <section class="content-card">
+      <h2 class="section-title">My Top 5 Favorite Foods</h2>
+      <p class="profile-info">Below are my top five favorite foods:</p>
 
-    <tr>
-        <td>Lechon</td>
-            <td>It is flavorful and perfect for special occasions.</td>
-    </tr>
+      <ol class="food-list" type="A">
+        <li>Lechon</li>
+        <li>Tinola</li>
+        <li>Ice Cream</li>
+        <li>Fish</li>
+        <li>French Fries</li>
+      </ol>
+    </section>
+   
+    <section class="content-card">
+      <h2 class="section-title">My Favorite Things</h2>
+      <p class="profile-info">
+        My favorite subject is <strong>Computer Programming</strong>.
+        My favorite programming language to learn is HTML.
+        I also enjoy discovering new coding techniques
+        and building simple websites.
+      </p>
+    </section>
 
-    <tr>
-        <td>Tinola</td>
-            <td>I like its warm soup and comforting taste.</td>
-    </tr>
+    <section class="content-card">
+      <h2 class="section-title">My Favorite Song</h2>
+      <div class="audio-container">
+        <audio controls>
+          <source src="fitterkarma - Kalapastangan (Lyrics).mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        
+      </div>
+      <p class="profile-info">
+        This audio represents one of my favorite songs that helps me relax and stay motivated.
+      </p>
+    </section>
+   
+    <section class="content-card">
+      <h2 class="section-title">Why I Love These Foods</h2>
+      <table class="table-style">
+        <tr>
+          <th class="table-header">Favorite Food</th>
+          <th class="table-header">Why I Like It</th>
+        </tr>
+        <tr>
+          <td>Lechon</td>
+          <td>It is flavorful and perfect for special occasions.</td>
+        </tr>
+        <tr>
+          <td>Tinola</td>
+          <td>I like its warm soup and comforting taste.</td>
+        </tr>
+        <tr>
+          <td>Ice Cream</td>
+          <td>It is sweet, cold, and refreshing.</td>
+        </tr>
+        <tr>
+          <td>Fish</td>
+          <td>It is tasty and can be prepared in many ways.</td>
+        </tr>
+        <tr>
+          <td>French Fries</td>
+          <td>They are crispy and great as a snack.</td>
+        </tr>
+      </table>
+    </section>
 
-    <tr>
-        <td>Ice Cream</td>
-            <td>It is sweet, cold, and refreshing.</td>
-    </tr>
+    <section class="content-card">
+      <h2 class="section-title">My Favorite Video</h2>
+      <div class="video-container">
+        <iframe 
+          width="100%" 
+          height="315" 
+          src="https://www.youtube.com/embed/QsYCtU99yLI?si=4m9W7rxidcxOBxI9" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="profile-info">
+        This is one of my favorite videos to watch during my free time.
+      </p>
+    </section>
+  </main>
 
-    <tr>
-        <td>Fish</td>
-            <td>It is tasty and can be prepared in many ways.</td>
-    </tr>
+  <footer>
+    <p>&copy; 2026 Earl Keith C. Unde. All rights reserved.</p>
+  </footer>
 
-    <tr>
-        <td>French Fries</td>
-            <td>They are crispy and great as a snack.</td>
-    </tr>
-
-</table>
-
-  <br>
-  
-<h2 class="section-title">My Favorite Mukbang Video</h2>
-<p class="profile-info">
-<a class="<iframe width="560" height="315" src="https://www.youtube.com/embed/QsYCtU99yLI?si=4m9W7rxidcxOBxI9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" hre
+</body>
+</html>
